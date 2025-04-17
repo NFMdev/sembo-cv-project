@@ -1,0 +1,27 @@
+.search-bar {
+    display: flex;
+    gap: 0.5rem;
+    width: 50%;
+    height: 3rem;
+}
+
+.search-input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    flex: 1;
+    font-size: 1rem;
+    letter-spacing: 0.025em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Cocogoose Pro Light';
+}
+
+.search-button {
+    padding: 0.5rem 1rem;
+    background-color: #7a6da7;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Cocogoose Pro Semilight';
+}
