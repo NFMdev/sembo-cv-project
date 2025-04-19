@@ -1,9 +1,19 @@
-import { Home, User, Settings } from "lucide-react";
+import { 
+    User, 
+    BriefcaseBusiness, 
+    GraduationCap,
+    Brain,
+    Code,
+    Mail
+} from "lucide-react";
 
 export const iconMap: Record<string, React.ElementType> = {
-  home: Home,
-  user: User,
-  settings: Settings,
+    user: User,
+    experience: BriefcaseBusiness,
+    education: GraduationCap,
+    skills: Brain,
+    stack: Code,
+    mail: Mail,
 };
 
 type ItemProps = {
@@ -21,7 +31,7 @@ export function Item({name, icon, isActive, onClick}: ItemProps) {
             className={`tab-button ${isActive ? "active" : ""}`}
             onClick={onClick}
         >
-            {Icon && <Icon size={18}/>}
+            {Icon && <Icon size={20}/>}
             {name}
         </button>
     );

@@ -1,15 +1,21 @@
 import { useState } from 'react';
 import './item-tab.css';
 import { Item } from './item';
+import { About } from './topics/about/about';
+import { Experience } from './topics/experience/experience';
 
 const tabs = [
-    { name: "Inicio", icon: "home" },
-    { name: "Perfil", icon: "user" },
-    { name: "Ajustes", icon: "settings" },
+    { name: "About", icon: "user" },
+    { name: "Experience", icon: "experience" },
+    { name: "Education", icon: "education" },
+    { name: "Skills", icon: "skills" },
+    { name: "Tech Stack", icon: "stack" },
+    { name: "Contact", icon: "mail" },
+
 ];
 
 export function ItemTab() {
-    const [activeTab, setActiveTab] = useState<string>("Inicio");
+    const [activeTab, setActiveTab] = useState<string>("About");
 
     return (
         <div className="tab-container">
@@ -24,9 +30,12 @@ export function ItemTab() {
                 ))}
             </div>
             <div className="tab-content">
-                {activeTab === "Inicio" && <p>Bienvenido a la página de inicio</p>}
-                {activeTab === "Perfil" && <p>Este es tu perfil</p>}
-                {activeTab === "Ajustes" && <p>Aquí puedes cambiar configuraciones</p>}
+                {activeTab === "About" && About()}
+                {activeTab === "Experience" && Experience()}
+                {activeTab === "Education" && <p>Education</p>}
+                {activeTab === "Skills" && <p>Skills</p>}
+                {activeTab === "Tech Stack" && <p>Tech Stack</p>}
+                {activeTab === "Contact" && <p>Contact</p>}
             </div>
         </div>
     );
