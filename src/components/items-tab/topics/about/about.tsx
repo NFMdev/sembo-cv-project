@@ -2,7 +2,7 @@ import './about.css';
 
 export function About() {
     return (
-        <div className="about-container">
+        <section className="about-container">
             <p>
                 I'm a software developer with over six years of experience and a genuine passion for technology.
             </p>
@@ -18,6 +18,6 @@ export function About() {
             <p>
                 I look forward to contributing and growing alongside others who share that same vision.
             </p>
-        </div>
+        </section>
     );
 }

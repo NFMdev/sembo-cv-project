@@ -1,0 +1,50 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+
+.skills-slider .slick-slider {
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.skills-slider .slick-dots {
+    position: static;
+}
+
+.skills-slider .slick-dots li button:before {
+    color: #6366f1;
+}
+
+.skills-slider .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #4f46e5;
+}
+
+.soft-skills-chart {
+    padding: 1rem;
+}
+
+.soft-skills-chart h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.how-i-work-container {
+    padding: 1rem;
+    text-align: center;
+}
+
+.how-i-work-container h3 {
+    font-size: 1.5rem;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.how-i-work-container p {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.6;
+}

@@ -1,0 +1,65 @@
+.techstack-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.techstack-tab {
+    background: transparent;
+    border: 2px solid #ccc;
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.techstack-tab.active {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+.techstack-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.tech-card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.tech-name {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.tech-bar {
+    height: 8px;
+    border-radius: 5px;
+    position: relative;
+    background: #eee;
+}
+
+.tech-level {
+    font-size: 0.75rem;
+    margin-top: 0.4rem;
+    display: block;
+    opacity: 0.7;
+}
+
+/* Color levels */
+.level-familiar {
+    background: linear-gradient(90deg, #fca5a5 30%, #eee 30%);
+}
+.level-intermediate {
+    background: linear-gradient(90deg, #facc15 60%, #eee 60%);
+}
+.level-advanced {
+    background: linear-gradient(90deg, #4ade80 100%, #eee 90%);
+}

@@ -3,8 +3,8 @@ import './experience.css';
 type CardProps = {
     company: string;
     title: string;
-    description: string;
-    technologies: string[];
+    description: string[];
+    technologies: Map<string, string>;
 }
 
 export function ExperienceCard({ company, title, description, technologies }: CardProps) {
@@ -14,10 +14,20 @@ export function ExperienceCard({ company, title, description, technologies }: Ca
                 <h3 className="experience-title">{company}</h3>
                 <span className="experience-company">{title}</span>
             </div>
-            <p className="experience-description">{description}</p>
+            {description.map((desc, index) => (
+                <p key={index} className="experience-description">{desc}</p>
+            ))}
             <div className="experience-tech">
-                {technologies.map((tech, index) => (
-                    <span key={index} className="tech-badge">{tech}</span>
+                {[...technologies.entries()].map(([tech, url], index) => (
+                    <a 
+                        key={index} 
+                        href={url} 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="tech-badge"
+                    >
+                        {tech}
+                    </a>
                 ))}
             </div>
         </div>

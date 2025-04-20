@@ -3,6 +3,9 @@ import './item-tab.css';
 import { Item } from './item';
 import { About } from './topics/about/about';
 import { Experience } from './topics/experience/experience';
+import { Education } from './topics/education/education';
+import { Skills } from './topics/skills/skills';
+import { TechStack } from './topics/tech-stack/tech-stack';
 
 const tabs = [
     { name: "About", icon: "user" },
@@ -14,7 +17,7 @@ const tabs = [
 
 ];
 
-export function ItemTab() {
+export const ItemTab = () => {
     const [activeTab, setActiveTab] = useState<string>("About");
 
     return (
@@ -30,11 +33,11 @@ export function ItemTab() {
                 ))}
             </div>
             <div className="tab-content">
-                {activeTab === "About" && About()}
-                {activeTab === "Experience" && Experience()}
-                {activeTab === "Education" && <p>Education</p>}
-                {activeTab === "Skills" && <p>Skills</p>}
-                {activeTab === "Tech Stack" && <p>Tech Stack</p>}
+                {activeTab === "About" && <About />}
+                {activeTab === "Experience" && <Experience />}
+                {activeTab === "Education" && <Education />}
+                {activeTab === "Skills" && <Skills />}
+                {activeTab === "Tech Stack" && <TechStack />}
                 {activeTab === "Contact" && <p>Contact</p>}
             </div>
         </div>
