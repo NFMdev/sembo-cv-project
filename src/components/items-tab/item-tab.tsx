@@ -6,6 +6,7 @@ import { Experience } from './topics/experience/experience';
 import { Education } from './topics/education/education';
 import { Skills } from './topics/skills/skills';
 import { TechStack } from './topics/tech-stack/tech-stack';
+import { Contact } from './topics/contact/contact';
 
 const tabs = [
     { name: "About", icon: "user" },
@@ -38,7 +39,7 @@ export const ItemTab = () => {
                 {activeTab === "Education" && <Education />}
                 {activeTab === "Skills" && <Skills />}
                 {activeTab === "Tech Stack" && <TechStack />}
-                {activeTab === "Contact" && <p>Contact</p>}
+                {activeTab === "Contact" && <Contact />}
             </div>
         </div>
     );

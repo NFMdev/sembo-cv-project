@@ -25,7 +25,7 @@ const GP_TECHS = new Map<string, string>([
 ]);
 
 const CONJURER_DESCRIPTION = [
-    'Developed a custom CRM platform for managing both printed and digital labels.',
+    'Developed a custom CRM platform for managing both printed and digital labels for IKEA.',
     'Built a complete CRUD interface for label management, and a real-time dashboard to visualize their lifecycle (printing, in transit, installed).',
     'Contributed to frontend and backend implementation using modern frameworks and containerized environments.'
 ];

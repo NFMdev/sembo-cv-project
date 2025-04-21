@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')!).render(
   <>
     <MenuBar/>
     <div style={{display:"flex", flexDirection:"column", alignItems:"center", gap:"2rem", marginTop:"3rem"}}>
-      <h1>CV Nicolás Fiorito</h1>
+      <h1>Nico Fiorito</h1>
       <SearchTab onSearch={handleSearch}/>
     </div>
     <ItemTab/>
