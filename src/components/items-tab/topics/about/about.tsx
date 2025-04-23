@@ -4,7 +4,7 @@ export function About() {
     return (
         <section className="about-container">
             <p>
-                I'm a software developer with over six years of experience and a genuine passion for technology.
+                I'm a software developer with over four years of experience and a genuine passion for technology.
             </p>
             <p>
                 What started as curiosity quickly became a career path that has deeply shaped the way I think and approach the world. Software development has brought structure to my life, pushed me to grow, and opened the door to meaningful collaborations with incredible people.
