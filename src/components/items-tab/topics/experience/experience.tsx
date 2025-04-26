@@ -41,14 +41,18 @@ export const Experience = () => {
     return (
     <section className="experience-container">
         {ExperienceCard({
-        company: "Conjurer Services S.A.",
+        company: "IKEA",
         title: "Frontend & Backend Developer · 2021 - 2022",
+        webUrl: "https://www.ikea.es/",
+        webImg: "src/assets/img/company_1.png",
         description: CONJURER_DESCRIPTION,
         technologies: CONJURER_TECHS
         })}
         {ExperienceCard({
         company: "Grupo Piñero",
         title: "Full Stack Developer · 2022 - Present",
+        webUrl: "https://www.bahia-principe.com/",
+        webImg: "src/assets/img/company_2.png",
         description: GP_DESCRIPTION,
         technologies: GP_TECHS
         })}

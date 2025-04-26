@@ -3,71 +3,56 @@
     flex-direction: row;
     gap: 2rem;
 }
+  
+.experience-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+}
 
-.card-container {
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    padding: 1rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .card-container:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
-  }
-  
-  .experience-header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    margin-bottom: 0.75rem;
-  }
-  
-  .experience-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #111827;
-    margin: 0;
-  }
-  
-  .experience-company {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #6b7280;
-  }
-  
-  .experience-description {
-    font-size: 1rem;
-    color: #374151;
-    line-height: 1.6;
-  }
+.experience-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 0;
+}
 
-  .card-container p + p {
-    margin-top: 0;
-  }
+.experience-company {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6b7280;
+}
 
-  .experience-tech {
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  
-  .tech-badge {
-    background-color: #f3f4f6;
-    color: #111827;
-    font-size: 0.75rem;
-    font-weight: 500;
-    padding: 0.35rem 0.75rem;
-    border-radius: 9999px;
-    border: 1px solid #e5e7eb;
-    transition: background-color 0.2s ease;
-    text-decoration: none;
-  }
-  
-  .tech-badge:hover {
-    background-color: #e5e7eb;
-  }
-  
+.experience-description {
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.card-container p + p {
+  margin-top: 0;
+}
+
+.experience-tech {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-badge {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid #e5e7eb;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.tech-badge:hover {
+  background-color: #e5e7eb;
+}

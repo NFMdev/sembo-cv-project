@@ -1,15 +1,18 @@
+import { HoverPreviewCard } from '../../../shared/hover-preview-card/hover-preview-card';
 import './experience.css';
 
 type CardProps = {
     company: string;
     title: string;
+    webUrl: string;
+    webImg: string;
     description: string[];
     technologies: Map<string, string>;
 }
 
-export function ExperienceCard({ company, title, description, technologies }: CardProps) {
+export function ExperienceCard({ company, title, webUrl, webImg, description, technologies }: CardProps) {
     return (
-        <div className="card-container">
+        <HoverPreviewCard webImg={webImg} webUrl={webUrl}>
             <div className="experience-header">
                 <h3 className="experience-title">{company}</h3>
                 <span className="experience-company">{title}</span>
@@ -30,6 +33,6 @@ export function ExperienceCard({ company, title, description, technologies }: Ca
                     </a>
                 ))}
             </div>
-        </div>
+        </HoverPreviewCard>
     );
 }
