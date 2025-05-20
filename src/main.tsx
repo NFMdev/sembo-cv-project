@@ -6,7 +6,6 @@ import { WebProvider } from './contexts/web-context.tsx';
 import { WebPreview } from './components/iframe-preview/web-preview.tsx';
 
 function handleSearch(query: string) {
-  console.log("Searching for:", query);
 }
 
 createRoot(document.getElementById('root')!).render(

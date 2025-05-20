@@ -4,7 +4,6 @@ import './web-preview.css'
 
 export const WebPreview = () => {
     const { webImg } = useContext(WebContext);
-    console.log(webImg)
     if (!webImg) return null;
 
     return (
