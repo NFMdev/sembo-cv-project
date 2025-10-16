@@ -1,10 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import './index.css'
 import './App.css'
+import { WebProvider } from './contexts/web-context';
+import SearchBar from './components/search-bar/search-bar';
+import { ItemTab } from './components/items-tab/item-tab';
+import { WebPreview } from './components/iframe-preview/web-preview';
 
 function App() {
-  
+  const [activeTab, setActiveTab] = useState<string>("");
+
+  return (
+    <WebProvider>
+      <div className="main-container">
+        
+        <h1>Nico Fiorito</h1>
+        <SearchBar onSearch={setActiveTab}/>
+        <ItemTab activeTab={activeTab} setActiveTab={setActiveTab}/>
+        <WebPreview />
+      </div>
+    </WebProvider>
+  );
 }
 
 export default App
