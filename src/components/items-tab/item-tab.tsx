@@ -6,16 +6,7 @@ import { Education } from './topics/education/education';
 import { Skills } from './topics/skills/skills';
 import { TechStack } from './topics/tech-stack/tech-stack';
 import { Contact } from './topics/contact/contact';
-
-const tabs = [
-    { id: "about", name: "About", icon: "user" },
-    { id: "experience", name: "Experience", icon: "experience" },
-    { id: "education", name: "Education", icon: "education" },
-    { id: "skills", name: "Skills", icon: "skills" },
-    { id: "tech-stack", name: "Tech Stack", icon: "stack" },
-    { id: "contact", name: "Contact", icon: "mail" },
-
-];
+import { TABS } from '../shared/constants/tabs-constants';
 
 type ItemTabProps = {
   activeTab: string;
@@ -27,7 +18,7 @@ export const ItemTab = ({ activeTab, setActiveTab }: ItemTabProps) => {
     return (
         <div className="tab-container">
             <div className="tab-buttons">
-                {tabs.map((tab) => (
+                {TABS.map((tab) => (
                     <Item 
                         name={tab.name} 
                         icon={tab.icon} 

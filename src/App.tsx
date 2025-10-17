@@ -7,7 +7,7 @@ import { ItemTab } from './components/items-tab/item-tab';
 import { WebPreview } from './components/iframe-preview/web-preview';
 
 function App() {
-  const [activeTab, setActiveTab] = useState<string>("");
+  const [activeTab, setActiveTab] = useState<string>("about");
 
   return (
     <WebProvider>

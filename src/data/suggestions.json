@@ -1,0 +1,974 @@
+[
+  {
+    "label": "about-container",
+    "tab": "about",
+    "phrase": "about-container",
+    "shortPhrase": "about-container"
+  },
+  {
+    "label": "contact-card",
+    "tab": "contact",
+    "phrase": "contact-card",
+    "shortPhrase": "contact-card"
+  },
+  {
+    "label": "contact-list",
+    "tab": "contact",
+    "phrase": "contact-list",
+    "shortPhrase": "contact-list"
+  },
+  {
+    "label": "mailto:nicofioritom@gmail.com",
+    "tab": "contact",
+    "phrase": "mailto:nicofioritom@gmail.com",
+    "shortPhrase": "mailto:nicofioritom@gmail.com"
+  },
+  {
+    "label": "_blank",
+    "tab": "contact",
+    "phrase": "_blank",
+    "shortPhrase": "_blank"
+  },
+  {
+    "label": "noopener noreferrer",
+    "tab": "contact",
+    "phrase": "noopener noreferrer",
+    "shortPhrase": "noopener noreferrer"
+  },
+  {
+    "label": "contact-icon",
+    "tab": "contact",
+    "phrase": "contact-icon",
+    "shortPhrase": "contact-icon"
+  },
+  {
+    "label": "https://www.linkedin.com/in/nicolas-fiorito",
+    "tab": "contact",
+    "phrase": "https://www.linkedin.com/in/nicolas-fiorito",
+    "shortPhrase": "https://www.linkedin.com/in/nicolas-fiorito"
+  },
+  {
+    "label": "_blank",
+    "tab": "contact",
+    "phrase": "_blank",
+    "shortPhrase": "_blank"
+  },
+  {
+    "label": "noopener noreferrer",
+    "tab": "contact",
+    "phrase": "noopener noreferrer",
+    "shortPhrase": "noopener noreferrer"
+  },
+  {
+    "label": "https://github.com/NFMdev",
+    "tab": "contact",
+    "phrase": "https://github.com/NFMdev",
+    "shortPhrase": "https://github.com/NFMdev"
+  },
+  {
+    "label": "_blank",
+    "tab": "contact",
+    "phrase": "_blank",
+    "shortPhrase": "_blank"
+  },
+  {
+    "label": "noopener noreferrer",
+    "tab": "contact",
+    "phrase": "noopener noreferrer",
+    "shortPhrase": "noopener noreferrer"
+  },
+  {
+    "label": "education-container",
+    "tab": "education",
+    "phrase": "education-container",
+    "shortPhrase": "education-container"
+  },
+  {
+    "label": "src/assets/img/education_1.png",
+    "tab": "education",
+    "phrase": "src/assets/img/education_1.png",
+    "shortPhrase": "src/assets/img/education_1.png"
+  },
+  {
+    "label": "https://www.cide.es/",
+    "tab": "education",
+    "phrase": "https://www.cide.es/",
+    "shortPhrase": "https://www.cide.es/"
+  },
+  {
+    "label": "education-title",
+    "tab": "education",
+    "phrase": "education-title",
+    "shortPhrase": "education-title"
+  },
+  {
+    "label": "education-location",
+    "tab": "education",
+    "phrase": "education-location",
+    "shortPhrase": "education-location"
+  },
+  {
+    "label": "education-description",
+    "tab": "education",
+    "phrase": "education-description",
+    "shortPhrase": "education-description"
+  },
+  {
+    "label": "src/assets/img/education_2.png",
+    "tab": "education",
+    "phrase": "src/assets/img/education_2.png",
+    "shortPhrase": "src/assets/img/education_2.png"
+  },
+  {
+    "label": "https://github.com/NFMdev",
+    "tab": "education",
+    "phrase": "https://github.com/NFMdev",
+    "shortPhrase": "https://github.com/NFMdev"
+  },
+  {
+    "label": "education-title",
+    "tab": "education",
+    "phrase": "education-title",
+    "shortPhrase": "education-title"
+  },
+  {
+    "label": "education-description",
+    "tab": "education",
+    "phrase": "education-description",
+    "shortPhrase": "education-description"
+  },
+  {
+    "label": "experience-header",
+    "tab": "experience",
+    "phrase": "experience-header",
+    "shortPhrase": "experience-header"
+  },
+  {
+    "label": "experience-title",
+    "tab": "experience",
+    "phrase": "experience-title",
+    "shortPhrase": "experience-title"
+  },
+  {
+    "label": "experience-company",
+    "tab": "experience",
+    "phrase": "experience-company",
+    "shortPhrase": "experience-company"
+  },
+  {
+    "label": "experience-description",
+    "tab": "experience",
+    "phrase": "experience-description",
+    "shortPhrase": "experience-description"
+  },
+  {
+    "label": "experience-tech",
+    "tab": "experience",
+    "phrase": "experience-tech",
+    "shortPhrase": "experience-tech"
+  },
+  {
+    "label": "_blank",
+    "tab": "experience",
+    "phrase": "_blank",
+    "shortPhrase": "_blank"
+  },
+  {
+    "label": "noopener noreferrer",
+    "tab": "experience",
+    "phrase": "noopener noreferrer",
+    "shortPhrase": "noopener noreferrer"
+  },
+  {
+    "label": "tech-badge",
+    "tab": "experience",
+    "phrase": "tech-badge",
+    "shortPhrase": "tech-badge"
+  },
+  {
+    "label": "Angular",
+    "tab": "experience",
+    "phrase": "Angular",
+    "shortPhrase": "Angular"
+  },
+  {
+    "label": "https://angular.io/",
+    "tab": "experience",
+    "phrase": "https://angular.io/",
+    "shortPhrase": "https://angular.io/"
+  },
+  {
+    "label": "Spring Boot",
+    "tab": "experience",
+    "phrase": "Spring Boot",
+    "shortPhrase": "Spring Boot"
+  },
+  {
+    "label": "https://spring.io/projects/spring-boot",
+    "tab": "experience",
+    "phrase": "https://spring.io/projects/spring-boot",
+    "shortPhrase": "https://spring.io/projects/spring-boot"
+  },
+  {
+    "label": "TypeScript",
+    "tab": "experience",
+    "phrase": "TypeScript",
+    "shortPhrase": "TypeScript"
+  },
+  {
+    "label": "https://www.typescriptlang.org/",
+    "tab": "experience",
+    "phrase": "https://www.typescriptlang.org/",
+    "shortPhrase": "https://www.typescriptlang.org/"
+  },
+  {
+    "label": "PostgreSQL",
+    "tab": "experience",
+    "phrase": "PostgreSQL",
+    "shortPhrase": "PostgreSQL"
+  },
+  {
+    "label": "https://www.postgresql.org/",
+    "tab": "experience",
+    "phrase": "https://www.postgresql.org/",
+    "shortPhrase": "https://www.postgresql.org/"
+  },
+  {
+    "label": "Docker",
+    "tab": "experience",
+    "phrase": "Docker",
+    "shortPhrase": "Docker"
+  },
+  {
+    "label": "https://www.docker.com/",
+    "tab": "experience",
+    "phrase": "https://www.docker.com/",
+    "shortPhrase": "https://www.docker.com/"
+  },
+  {
+    "label": "Trello",
+    "tab": "experience",
+    "phrase": "Trello",
+    "shortPhrase": "Trello"
+  },
+  {
+    "label": "https://trello.com/",
+    "tab": "experience",
+    "phrase": "https://trello.com/",
+    "shortPhrase": "https://trello.com/"
+  },
+  {
+    "label": "GitHub",
+    "tab": "experience",
+    "phrase": "GitHub",
+    "shortPhrase": "GitHub"
+  },
+  {
+    "label": "https://github.com/",
+    "tab": "experience",
+    "phrase": "https://github.com/",
+    "shortPhrase": "https://github.com/"
+  },
+  {
+    "label": "Angular",
+    "tab": "experience",
+    "phrase": "Angular",
+    "shortPhrase": "Angular"
+  },
+  {
+    "label": "https://angular.io/",
+    "tab": "experience",
+    "phrase": "https://angular.io/",
+    "shortPhrase": "https://angular.io/"
+  },
+  {
+    "label": "Java",
+    "tab": "experience",
+    "phrase": "Java",
+    "shortPhrase": "Java"
+  },
+  {
+    "label": "https://dev.java/",
+    "tab": "experience",
+    "phrase": "https://dev.java/",
+    "shortPhrase": "https://dev.java/"
+  },
+  {
+    "label": "Oracle DB",
+    "tab": "experience",
+    "phrase": "Oracle DB",
+    "shortPhrase": "Oracle DB"
+  },
+  {
+    "label": "https://www.oracle.com/database/",
+    "tab": "experience",
+    "phrase": "https://www.oracle.com/database/",
+    "shortPhrase": "https://www.oracle.com/database/"
+  },
+  {
+    "label": "MuleSoft",
+    "tab": "experience",
+    "phrase": "MuleSoft",
+    "shortPhrase": "MuleSoft"
+  },
+  {
+    "label": "https://www.mulesoft.com/platform/api",
+    "tab": "experience",
+    "phrase": "https://www.mulesoft.com/platform/api",
+    "shortPhrase": "https://www.mulesoft.com/platform/api"
+  },
+  {
+    "label": "OpenShift",
+    "tab": "experience",
+    "phrase": "OpenShift",
+    "shortPhrase": "OpenShift"
+  },
+  {
+    "label": "https://www.openshift.com/",
+    "tab": "experience",
+    "phrase": "https://www.openshift.com/",
+    "shortPhrase": "https://www.openshift.com/"
+  },
+  {
+    "label": "Jenkins",
+    "tab": "experience",
+    "phrase": "Jenkins",
+    "shortPhrase": "Jenkins"
+  },
+  {
+    "label": "https://www.jenkins.io/",
+    "tab": "experience",
+    "phrase": "https://www.jenkins.io/",
+    "shortPhrase": "https://www.jenkins.io/"
+  },
+  {
+    "label": "Jasper Reports",
+    "tab": "experience",
+    "phrase": "Jasper Reports",
+    "shortPhrase": "Jasper Reports"
+  },
+  {
+    "label": "https://community.jaspersoft.com/project/jasperreports-library",
+    "tab": "experience",
+    "phrase": "https://community.jaspersoft.com/project/jasperreports-library",
+    "shortPhrase": "https://community.jaspersoft.com/project/jasperreports-library"
+  },
+  {
+    "label": "Oracle Reports Builder",
+    "tab": "experience",
+    "phrase": "Oracle Reports Builder",
+    "shortPhrase": "Oracle Reports Builder"
+  },
+  {
+    "label": "https://docs.oracle.com/middleware/11119/classic/build-reports/orbr_concepts1001.htm",
+    "tab": "experience",
+    "phrase": "https://docs.oracle.com/middleware/11119/classic/build-reports/orbr_concepts1001.htm",
+    "shortPhrase": "https://docs.oracle.com/middleware/11119/classic/build-reports/orbr_concepts1001.htm"
+  },
+  {
+    "label": "Jira",
+    "tab": "experience",
+    "phrase": "Jira",
+    "shortPhrase": "Jira"
+  },
+  {
+    "label": "https://www.atlassian.com/software/jira",
+    "tab": "experience",
+    "phrase": "https://www.atlassian.com/software/jira",
+    "shortPhrase": "https://www.atlassian.com/software/jira"
+  },
+  {
+    "label": "Microsoft Teams",
+    "tab": "experience",
+    "phrase": "Microsoft Teams",
+    "shortPhrase": "Microsoft Teams"
+  },
+  {
+    "label": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+    "tab": "experience",
+    "phrase": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software",
+    "shortPhrase": "https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"
+  },
+  {
+    "label": "experience-container",
+    "tab": "experience",
+    "phrase": "experience-container",
+    "shortPhrase": "experience-container"
+  },
+  {
+    "label": "IKEA",
+    "tab": "experience",
+    "phrase": "IKEA",
+    "shortPhrase": "IKEA"
+  },
+  {
+    "label": "Frontend & Backend Developer · 2021 - 2022",
+    "tab": "experience",
+    "phrase": "Frontend & Backend Developer · 2021 - 2022",
+    "shortPhrase": "Frontend & Backend Developer ·"
+  },
+  {
+    "label": "https://www.ikea.es/",
+    "tab": "experience",
+    "phrase": "https://www.ikea.es/",
+    "shortPhrase": "https://www.ikea.es/"
+  },
+  {
+    "label": "src/assets/img/company_1.png",
+    "tab": "experience",
+    "phrase": "src/assets/img/company_1.png",
+    "shortPhrase": "src/assets/img/company_1.png"
+  },
+  {
+    "label": "Grupo Piñero",
+    "tab": "experience",
+    "phrase": "Grupo Piñero",
+    "shortPhrase": "Grupo Piñero"
+  },
+  {
+    "label": "Full Stack Developer · 2022 - Present",
+    "tab": "experience",
+    "phrase": "Full Stack Developer · 2022 - Present",
+    "shortPhrase": "Full Stack Developer · 2022"
+  },
+  {
+    "label": "https://www.bahia-principe.com/",
+    "tab": "experience",
+    "phrase": "https://www.bahia-principe.com/",
+    "shortPhrase": "https://www.bahia-principe.com/"
+  },
+  {
+    "label": "src/assets/img/company_2.png",
+    "tab": "experience",
+    "phrase": "src/assets/img/company_2.png",
+    "shortPhrase": "src/assets/img/company_2.png"
+  },
+  {
+    "label": "Frontend & Backend Developer · 2021 - 2022",
+    "tab": "experience",
+    "phrase": "Frontend & Backend Developer · 2021 - 2022",
+    "shortPhrase": "Frontend & Backend Developer ·"
+  },
+  {
+    "label": "Full Stack Developer · 2022 - Present",
+    "tab": "experience",
+    "phrase": "Full Stack Developer · 2022 - Present",
+    "shortPhrase": "Full Stack Developer · 2022"
+  },
+  {
+    "label": "how-i-work-container",
+    "tab": "skills",
+    "phrase": "how-i-work-container",
+    "shortPhrase": "how-i-work-container"
+  },
+  {
+    "label": "recharts",
+    "tab": "skills",
+    "phrase": "recharts",
+    "shortPhrase": "recharts"
+  },
+  {
+    "label": "Communication",
+    "tab": "skills",
+    "phrase": "Communication",
+    "shortPhrase": "Communication"
+  },
+  {
+    "label": "Adaptability",
+    "tab": "skills",
+    "phrase": "Adaptability",
+    "shortPhrase": "Adaptability"
+  },
+  {
+    "label": "Problem-solving",
+    "tab": "skills",
+    "phrase": "Problem-solving",
+    "shortPhrase": "Problem-solving"
+  },
+  {
+    "label": "Teamwork",
+    "tab": "skills",
+    "phrase": "Teamwork",
+    "shortPhrase": "Teamwork"
+  },
+  {
+    "label": "Ownership",
+    "tab": "skills",
+    "phrase": "Ownership",
+    "shortPhrase": "Ownership"
+  },
+  {
+    "label": "Continuous Learning",
+    "tab": "skills",
+    "phrase": "Continuous Learning",
+    "shortPhrase": "Continuous Learning"
+  },
+  {
+    "label": "soft-skills-chart",
+    "tab": "skills",
+    "phrase": "soft-skills-chart",
+    "shortPhrase": "soft-skills-chart"
+  },
+  {
+    "label": "100%",
+    "tab": "skills",
+    "phrase": "100%",
+    "shortPhrase": "100%"
+  },
+  {
+    "label": "50%",
+    "tab": "skills",
+    "phrase": "50%",
+    "shortPhrase": "50%"
+  },
+  {
+    "label": "50%",
+    "tab": "skills",
+    "phrase": "50%",
+    "shortPhrase": "50%"
+  },
+  {
+    "label": "80%",
+    "tab": "skills",
+    "phrase": "80%",
+    "shortPhrase": "80%"
+  },
+  {
+    "label": "skill",
+    "tab": "skills",
+    "phrase": "skill",
+    "shortPhrase": "skill"
+  },
+  {
+    "label": "Skills",
+    "tab": "skills",
+    "phrase": "Skills",
+    "shortPhrase": "Skills"
+  },
+  {
+    "label": "value",
+    "tab": "skills",
+    "phrase": "value",
+    "shortPhrase": "value"
+  },
+  {
+    "label": "#6366F1",
+    "tab": "skills",
+    "phrase": "#6366F1",
+    "shortPhrase": "#6366F1"
+  },
+  {
+    "label": "#6366F1",
+    "tab": "skills",
+    "phrase": "#6366F1",
+    "shortPhrase": "#6366F1"
+  },
+  {
+    "label": "skills-slider",
+    "tab": "skills",
+    "phrase": "skills-slider",
+    "shortPhrase": "skills-slider"
+  },
+  {
+    "label": "Backend",
+    "tab": "tech-stack",
+    "phrase": "Backend",
+    "shortPhrase": "Backend"
+  },
+  {
+    "label": "Java",
+    "tab": "tech-stack",
+    "phrase": "Java",
+    "shortPhrase": "Java"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "Spring Boot",
+    "tab": "tech-stack",
+    "phrase": "Spring Boot",
+    "shortPhrase": "Spring Boot"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "Oracle SQL",
+    "tab": "tech-stack",
+    "phrase": "Oracle SQL",
+    "shortPhrase": "Oracle SQL"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "PostgreSQL",
+    "tab": "tech-stack",
+    "phrase": "PostgreSQL",
+    "shortPhrase": "PostgreSQL"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "Node.js",
+    "tab": "tech-stack",
+    "phrase": "Node.js",
+    "shortPhrase": "Node.js"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "MongoDB",
+    "tab": "tech-stack",
+    "phrase": "MongoDB",
+    "shortPhrase": "MongoDB"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "Express.js",
+    "tab": "tech-stack",
+    "phrase": "Express.js",
+    "shortPhrase": "Express.js"
+  },
+  {
+    "label": "Intermediate",
+    "tab": "tech-stack",
+    "phrase": "Intermediate",
+    "shortPhrase": "Intermediate"
+  },
+  {
+    "label": "Frontend",
+    "tab": "tech-stack",
+    "phrase": "Frontend",
+    "shortPhrase": "Frontend"
+  },
+  {
+    "label": "Angular",
+    "tab": "tech-stack",
+    "phrase": "Angular",
+    "shortPhrase": "Angular"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "TypeScript",
+    "tab": "tech-stack",
+    "phrase": "TypeScript",
+    "shortPhrase": "TypeScript"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "HTML/CSS",
+    "tab": "tech-stack",
+    "phrase": "HTML/CSS",
+    "shortPhrase": "HTML/CSS"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "React",
+    "tab": "tech-stack",
+    "phrase": "React",
+    "shortPhrase": "React"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "Flutter",
+    "tab": "tech-stack",
+    "phrase": "Flutter",
+    "shortPhrase": "Flutter"
+  },
+  {
+    "label": "Intermediate",
+    "tab": "tech-stack",
+    "phrase": "Intermediate",
+    "shortPhrase": "Intermediate"
+  },
+  {
+    "label": "DevOps / Tools",
+    "tab": "tech-stack",
+    "phrase": "DevOps / Tools",
+    "shortPhrase": "DevOps / Tools"
+  },
+  {
+    "label": "Jenkins",
+    "tab": "tech-stack",
+    "phrase": "Jenkins",
+    "shortPhrase": "Jenkins"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "OpenShift",
+    "tab": "tech-stack",
+    "phrase": "OpenShift",
+    "shortPhrase": "OpenShift"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "Mulesoft",
+    "tab": "tech-stack",
+    "phrase": "Mulesoft",
+    "shortPhrase": "Mulesoft"
+  },
+  {
+    "label": "Advanced",
+    "tab": "tech-stack",
+    "phrase": "Advanced",
+    "shortPhrase": "Advanced"
+  },
+  {
+    "label": "Oracle Reports",
+    "tab": "tech-stack",
+    "phrase": "Oracle Reports",
+    "shortPhrase": "Oracle Reports"
+  },
+  {
+    "label": "Intermediate",
+    "tab": "tech-stack",
+    "phrase": "Intermediate",
+    "shortPhrase": "Intermediate"
+  },
+  {
+    "label": "Jasper Reports",
+    "tab": "tech-stack",
+    "phrase": "Jasper Reports",
+    "shortPhrase": "Jasper Reports"
+  },
+  {
+    "label": "Intermediate",
+    "tab": "tech-stack",
+    "phrase": "Intermediate",
+    "shortPhrase": "Intermediate"
+  },
+  {
+    "label": "Backend",
+    "tab": "tech-stack",
+    "phrase": "Backend",
+    "shortPhrase": "Backend"
+  },
+  {
+    "label": "techstack-tabs",
+    "tab": "tech-stack",
+    "phrase": "techstack-tabs",
+    "shortPhrase": "techstack-tabs"
+  },
+  {
+    "label": "techstack-content",
+    "tab": "tech-stack",
+    "phrase": "techstack-content",
+    "shortPhrase": "techstack-content"
+  },
+  {
+    "label": "tech-card",
+    "tab": "tech-stack",
+    "phrase": "tech-card",
+    "shortPhrase": "tech-card"
+  },
+  {
+    "label": "tech-name",
+    "tab": "tech-stack",
+    "phrase": "tech-name",
+    "shortPhrase": "tech-name"
+  },
+  {
+    "label": "Backend",
+    "tab": "tech-stack",
+    "phrase": "Backend",
+    "shortPhrase": "Backend"
+  },
+  {
+    "label": "Frontend",
+    "tab": "tech-stack",
+    "phrase": "Frontend",
+    "shortPhrase": "Frontend"
+  },
+  {
+    "label": "DevOps / Tools",
+    "tab": "tech-stack",
+    "phrase": "DevOps / Tools",
+    "shortPhrase": "DevOps / Tools"
+  },
+  {
+    "label": "Java",
+    "tab": "tech-stack",
+    "phrase": "Java",
+    "shortPhrase": "Java"
+  },
+  {
+    "label": "Spring Boot",
+    "tab": "tech-stack",
+    "phrase": "Spring Boot",
+    "shortPhrase": "Spring Boot"
+  },
+  {
+    "label": "Oracle SQL",
+    "tab": "tech-stack",
+    "phrase": "Oracle SQL",
+    "shortPhrase": "Oracle SQL"
+  },
+  {
+    "label": "PostgreSQL",
+    "tab": "tech-stack",
+    "phrase": "PostgreSQL",
+    "shortPhrase": "PostgreSQL"
+  },
+  {
+    "label": "Node.js",
+    "tab": "tech-stack",
+    "phrase": "Node.js",
+    "shortPhrase": "Node.js"
+  },
+  {
+    "label": "MongoDB",
+    "tab": "tech-stack",
+    "phrase": "MongoDB",
+    "shortPhrase": "MongoDB"
+  },
+  {
+    "label": "Express.js",
+    "tab": "tech-stack",
+    "phrase": "Express.js",
+    "shortPhrase": "Express.js"
+  },
+  {
+    "label": "Angular",
+    "tab": "tech-stack",
+    "phrase": "Angular",
+    "shortPhrase": "Angular"
+  },
+  {
+    "label": "TypeScript",
+    "tab": "tech-stack",
+    "phrase": "TypeScript",
+    "shortPhrase": "TypeScript"
+  },
+  {
+    "label": "HTML/CSS",
+    "tab": "tech-stack",
+    "phrase": "HTML/CSS",
+    "shortPhrase": "HTML/CSS"
+  },
+  {
+    "label": "React",
+    "tab": "tech-stack",
+    "phrase": "React",
+    "shortPhrase": "React"
+  },
+  {
+    "label": "Flutter",
+    "tab": "tech-stack",
+    "phrase": "Flutter",
+    "shortPhrase": "Flutter"
+  },
+  {
+    "label": "Jenkins",
+    "tab": "tech-stack",
+    "phrase": "Jenkins",
+    "shortPhrase": "Jenkins"
+  },
+  {
+    "label": "OpenShift",
+    "tab": "tech-stack",
+    "phrase": "OpenShift",
+    "shortPhrase": "OpenShift"
+  },
+  {
+    "label": "Mulesoft",
+    "tab": "tech-stack",
+    "phrase": "Mulesoft",
+    "shortPhrase": "Mulesoft"
+  },
+  {
+    "label": "Oracle Reports",
+    "tab": "tech-stack",
+    "phrase": "Oracle Reports",
+    "shortPhrase": "Oracle Reports"
+  },
+  {
+    "label": "Jasper Reports",
+    "tab": "tech-stack",
+    "phrase": "Jasper Reports",
+    "shortPhrase": "Jasper Reports"
+  },
+  {
+    "label": "about",
+    "tab": "about",
+    "phrase": "about",
+    "shortPhrase": "about"
+  },
+  {
+    "label": "experience",
+    "tab": "experience",
+    "phrase": "experience",
+    "shortPhrase": "experience"
+  },
+  {
+    "label": "education",
+    "tab": "education",
+    "phrase": "education",
+    "shortPhrase": "education"
+  },
+  {
+    "label": "tech-stack",
+    "tab": "tech-stack",
+    "phrase": "tech-stack",
+    "shortPhrase": "tech-stack"
+  },
+  {
+    "label": "contact",
+    "tab": "contact",
+    "phrase": "contact",
+    "shortPhrase": "contact"
+  }
+]
