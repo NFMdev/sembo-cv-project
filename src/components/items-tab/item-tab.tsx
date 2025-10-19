@@ -11,9 +11,18 @@ import { TABS } from '../shared/constants/tabs-constants';
 type ItemTabProps = {
   activeTab: string;
   setActiveTab: (tab: string) => void;
+  activeSubtab?: string;
+  setActiveSubtab?: (subtab: string) => void;
+  searchQuery: string;
 };
 
-export const ItemTab = ({ activeTab, setActiveTab }: ItemTabProps) => {
+export const ItemTab = ({
+    activeTab,
+    setActiveTab,
+    activeSubtab,
+    setActiveSubtab,
+    searchQuery
+}: ItemTabProps) => {
 
     return (
         <div className="tab-container">
@@ -28,11 +37,13 @@ export const ItemTab = ({ activeTab, setActiveTab }: ItemTabProps) => {
                 ))}
             </div>
             <div className="tab-content">
-                {activeTab === "about" && <About />}
-                {activeTab === "experience" && <Experience />}
-                {activeTab === "education" && <Education />}
+                {activeTab === "about" && <About searchQuery={searchQuery} />}
+                {activeTab === "experience" && <Experience searchQuery={searchQuery} />}
+                {activeTab === "education" && <Education searchQuery={searchQuery} />}
                 {activeTab === "skills" && <Skills />}
-                {activeTab === "tech-stack" && <TechStack />}
+                {activeTab === "tech-stack" && (
+                    <TechStack activeSubtab={activeSubtab} setActiveSubtab={setActiveSubtab} searchQuery={searchQuery} />
+                )}
                 {activeTab === "contact" && <Contact />}
             </div>
         </div>

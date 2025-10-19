@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './tech-stack.css';
+import { TextHighlight } from '../../../shared/text-highlight/text-highlight';
 
 type TechItem = {
     name: string;
@@ -28,8 +29,8 @@ const techCategories: Category[] = [
         title: "Frontend",
         techs: [
             { name: "Angular", level: "Advanced" },
-            { name: "TypeScript", level: "Advanced"},
-            { name: "HTML/CSS", level:  "Advanced"},
+            { name: "TypeScript", level: "Advanced" },
+            { name: "HTML/CSS", level: "Advanced" },
             { name: "React", level: "Advanced" },
             { name: "Flutter", level: "Intermediate" },
         ],
@@ -46,8 +47,21 @@ const techCategories: Category[] = [
     },
 ];
 
-export const TechStack = () => {
-    const [activeCategory, setActiveCategory] = useState("Backend");
+type TechStackProps = {
+    activeSubtab?: string;
+    setActiveSubtab?: (category: string) => void;
+    searchQuery: string;
+}
+
+export const TechStack = ({ activeSubtab, setActiveSubtab, searchQuery }: TechStackProps) => {
+
+    const [activeCategory, setActiveCategory] = useState(activeSubtab || "Backend");
+
+    useEffect(() => {
+        if (activeSubtab && activeSubtab !== activeCategory) {
+            setActiveCategory(activeSubtab);
+        }
+    }, [activeSubtab]);
 
     return (
         <section className='techstack-container'>
@@ -68,12 +82,14 @@ export const TechStack = () => {
                     techCategories.find(
                         (cat) => cat.title === activeCategory)?.techs.map((tech, index) => (
                             <div className="tech-card" key={index}>
-                                <span className="tech-name">{tech.name}</span>
+                                <span className="tech-name">
+                                    <TextHighlight text={tech.name} query={searchQuery} />
+                                </span>
                                 <div className={`tech-bar ${getLevelClass(tech.level)}`}>
                                 </div>
                             </div>
                         )
-                    )
+                        )
                 }
             </div>
         </section>
@@ -89,6 +105,6 @@ const getLevelClass = (level: string) => {
         case 'Advanced':
             return 'level-advanced';
         default:
-            return ''; 
+            return '';
     }
 };

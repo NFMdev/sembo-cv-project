@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import suggestions from "../../data/suggestions.json";
-import { generateSuggestionsTokens, AutocompleteToken } from "../../utils/generate-suggestions";
 import Fuse from "fuse.js";
 import "./search-bar.css";
-import { mapTabItem } from "../shared/item-tab-mapper";
+import { AutocompleteToken, generateSuggestionsTokens } from "../../utils/generate-suggestions";
 
 type SearchBarProps = {
-  onSearch: (query: string) => void;
+  onSearch: (tab: string, query: string, subtab?: string) => void;
 };
 
 export default function SearchBar({ onSearch }: SearchBarProps) {
@@ -22,7 +21,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
     const tokens = generateSuggestionsTokens(suggestions);
     setTokens(tokens);
     const fuseInstance = new Fuse(tokens, {
-      keys: ["word"],
+      keys: ["word", "phrase", "shortPhrase"],
       threshold: 0.3,
       minMatchCharLength: 2,
     });
@@ -42,43 +41,64 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
     }
 
     const results = fuse.search(lastWord);
-    const matches = results.map(r => r.item);
+    const matches = results.map((r) => r.item);
 
-    // Limitar frases a 5 palabras a partir de la coincidencia
-    const processed = matches.map(item => {
-      const words = item.phrase.split(/\s+/);
-      const idx = words.findIndex(w => w.toLowerCase().startsWith(lastWord));
-      const shortWords = words.slice(idx, idx + 5).join(" ");
-      return { ...item, shortPhrase: shortWords };
-    });
+    // Limitar resultados y evitar duplicados exactos
+    const unique = Array.from(
+      new Map(matches.map((m) => [`${m.word}-${m.tab}-${m.subtab}`, m])).values()
+    ).slice(0, 10);
 
-    setFiltered(processed);
+    setFiltered(unique);
     setActiveIndex(-1);
-    setShowSuggestions(processed.length > 0);
+    setShowSuggestions(unique.length > 0);
   }, [query, fuse]);
 
+  // ✅ Función para resaltar coincidencias
+  function highlightMatch(text: string, query: string) {
+    const regex = new RegExp(`(${query})`, "ig");
+    const parts = text.split(regex);
+    return (
+      <>
+        {parts.map((part, i) =>
+          regex.test(part) ? (
+            <strong key={i} className="highlight">
+              {part}
+            </strong>
+          ) : (
+            part
+          )
+        )}
+      </>
+    );
+  }
+
+  // ✅ Seleccionar sugerencia
   const handleSelect = (token: AutocompleteToken) => {
-    setQuery(token.phrase);
+    setQuery(token.word);
     setShowSuggestions(false);
-    onSearch(token.tab);
+    onSearch(token.tab, query, token.subtab);
   };
 
+  // ✅ Buscar manualmente (Enter o botón)
   const handleSearch = () => {
-    if (!query) return;
-    const token = tokens.find(t => t.phrase.toLowerCase() === query.toLowerCase());
-    if (token) onSearch(token.tab);
+    if (!query.trim()) return;
+    const match = tokens.find(
+      (t) => t.word.toLowerCase() === query.toLowerCase()
+    );
+    if (match) onSearch(match.tab, query, match.subtab);
     setShowSuggestions(false);
   };
 
+  // ✅ Teclas de navegación
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!showSuggestions) return;
 
     if (e.key === "ArrowDown") {
       e.preventDefault();
-      setActiveIndex(prev => (prev < filtered.length - 1 ? prev + 1 : prev));
+      setActiveIndex((prev) => (prev < filtered.length - 1 ? prev + 1 : prev));
     } else if (e.key === "ArrowUp") {
       e.preventDefault();
-      setActiveIndex(prev => (prev > 0 ? prev - 1 : -1));
+      setActiveIndex((prev) => (prev > 0 ? prev - 1 : -1));
     } else if (e.key === "Enter") {
       e.preventDefault();
       if (activeIndex >= 0) handleSelect(filtered[activeIndex]);
@@ -94,7 +114,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         ref={inputRef}
         type="text"
         value={query}
-        onChange={e => {
+        onChange={(e) => {
           setQuery(e.target.value);
           setShowSuggestions(true);
         }}
@@ -104,26 +124,31 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
         placeholder="Search..."
         className="search-input"
       />
-      <button
-        onClick={handleSearch}
-        className="search-button"
-      >
+      <button onClick={handleSearch} className="search-button">
         Search
       </button>
 
       {showSuggestions && filtered.length > 0 && (
         <ul className="suggestions-list">
-            {filtered.map((item, index) => (
-                <li
-                key={`${item.word}-${index}`}
-                className={`suggestion-item ${index === activeIndex ? "active" : ""}`}
-                onMouseDown={() => handleSelect(item)}
-                onMouseEnter={() => setActiveIndex(index)}
-                >
-                <span className="suggestion-word">{item.word}</span>
-                <span className="suggestion-tab"> → {mapTabItem(item.tab)}</span>
-                </li>
-            ))}
+          {filtered.map((item, index) => (
+            <li
+              key={`${item.word}-${item.tab}-${item.subtab}-${index}`}
+              className={`suggestion-item ${
+                index === activeIndex ? "active" : ""
+              }`}
+              onMouseDown={() => handleSelect(item)}
+              onMouseEnter={() => setActiveIndex(index)}
+            >
+              <span className="suggestion-word">
+                {highlightMatch(item.word, query)}
+              </span>
+              <span className="suggestion-path">
+                {" "}
+                → {item.tab}
+                {item.subtab ? ` → ${item.subtab}` : ""}
+              </span>
+            </li>
+          ))}
         </ul>
       )}
     </div>

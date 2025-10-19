@@ -37,25 +37,27 @@ const GP_DESCRIPTION = [
     'Managed a hybrid team, and participated in weekly client syncs.'
 ];
 
-export const Experience = () => {
+export const Experience = ({ searchQuery }: {searchQuery: string}) => {
     return (
-    <section className="experience-container">
-        {ExperienceCard({
-        company: "IKEA",
-        title: "Frontend & Backend Developer · 2021 - 2022",
-        webUrl: "https://www.ikea.es/",
-        webImg: "src/assets/img/company_1.png",
-        description: CONJURER_DESCRIPTION,
-        technologies: CONJURER_TECHS
+        <section className="experience-container">
+            {ExperienceCard({
+                company: "IKEA",
+                title: "Frontend & Backend Developer · 2021 - 2022",
+                webUrl: "https://www.ikea.es/",
+                webImg: "src/assets/img/company_1.png",
+                description: CONJURER_DESCRIPTION,
+                technologies: CONJURER_TECHS,
+                searchQuery: searchQuery
         })}
-        {ExperienceCard({
-        company: "Grupo Piñero",
-        title: "Full Stack Developer · 2022 - Present",
-        webUrl: "https://www.bahia-principe.com/",
-        webImg: "src/assets/img/company_2.png",
-        description: GP_DESCRIPTION,
-        technologies: GP_TECHS
+            {ExperienceCard({
+                company: "Grupo Piñero",
+                title: "Full Stack Developer · 2022 - Present",
+                webUrl: "https://www.bahia-principe.com/",
+                webImg: "src/assets/img/company_2.png",
+                description: GP_DESCRIPTION,
+                technologies: GP_TECHS,
+                searchQuery: searchQuery
         })}
-    </section>
+        </section>
     );
 };  

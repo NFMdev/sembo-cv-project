@@ -1,6 +1,7 @@
 export type Suggestion = {
   label: string;
   tab: string;
+  subtab?: string;
   phrase: string;
   shortPhrase: string;
 };
@@ -9,31 +10,37 @@ export type AutocompleteToken = {
   word: string;
   next?: string;
   tab: string;
+  subtab?: string;
   phrase: string;
   shortPhrase: string;
 };
 
 export function generateSuggestionsTokens(suggestions: Suggestion[]): AutocompleteToken[] {
   const tokens: AutocompleteToken[] = [];
-  
-  const seen: Record<string, Set<string>> = {}; // { tabName: Set<word> }
+  const seen: Record<string, Set<string>> = {}; // Evita duplicados: { "tab:subtab": Set<word> }
 
-  suggestions.forEach(({ label, tab, phrase, shortPhrase }) => {
-    if (!seen[tab]) seen[tab] = new Set();
+  suggestions.forEach(({ label, tab, subtab, phrase, shortPhrase }) => {
+    const key = `${tab}:${subtab || ""}`;
+    if (!seen[key]) seen[key] = new Set();
 
-    // token principal
-    if (!seen[tab].has(label)) {
-      tokens.push({ word: label, tab, phrase, shortPhrase });
-      seen[tab].add(label);
+    // Limpiar y dividir las palabras
+    const words = phrase.split(/\s+/).map(w => w.replace(/[.,;!?]+$/g, ""));
+
+    for (let i = 0; i < words.length; i++) {
+      const word = words[i];
+      if (!word || seen[key].has(word)) continue;
+
+      tokens.push({
+        word,
+        next: i < words.length - 1 ? words[i + 1] : undefined,
+        tab,
+        subtab,
+        phrase,
+        shortPhrase,
+      });
+
+      seen[key].add(word);
     }
-
-    // también puedes hacer lo mismo para cada palabra de shortPhrase si quieres autocompletar palabra a palabra
-    shortPhrase.split(/\s+/).forEach(word => {
-      if (!seen[tab].has(word)) {
-        tokens.push({ word, tab, phrase, shortPhrase });
-        seen[tab].add(word);
-      }
-    });
   });
 
   return tokens;
