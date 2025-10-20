@@ -3,7 +3,9 @@ import { SkillsRadarChart } from './skills-radar-chart';
 import './skills.css';
 import { HowIWork } from './how-i-work';
 
-export const Skills = () => {
+export const Skills = (
+    // searchQuery: string
+) => {
     const settings = {
         dots: true,
         infinite: true,
