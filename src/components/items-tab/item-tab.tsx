@@ -29,11 +29,12 @@ export const ItemTab = ({
             <div className="tab-buttons">
                 {TABS.map((tab) => (
                     <Item 
+                        key={tab.id}
                         name={tab.name} 
                         icon={tab.icon} 
                         isActive={activeTab === tab.id}
                         onClick={() => setActiveTab(tab.id)}
-                    ></Item>
+                    />
                 ))}
             </div>
             <div className="tab-content">

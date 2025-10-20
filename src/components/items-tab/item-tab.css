@@ -1,49 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900&display=swap');
 
 .tab-container {
-  margin: 2rem;
-  place-self: center;
+  margin: var(--spacing-2xl) 0;
+  width: 100%;
 }
 
 .tab-buttons {
   display: flex;
-  gap: 2rem;
-  place-self: center;
-  padding-bottom: 0.5rem;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: var(--spacing-2xl);
+  flex-wrap: wrap;
 }
 
 .tab-button {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: var(--spacing-sm);
   align-items: center;
   background: none;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: var(--spacing-md) var(--spacing-lg);
   cursor: pointer;
-  font-weight: bold;
-  color: #555;
-  border-bottom: 2px solid transparent;
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-lg);
+  transition: all var(--transition-base);
   font-family: 'Cocogoose Pro Light';
+  position: relative;
+  min-width: 120px;
+}
+
+.tab-button:hover {
+  color: var(--primary-color);
+  background: var(--bg-tertiary);
+  transform: translateY(-2px);
 }
 
 .tab-button.active {
-  color: #000;
-  border-color: #7a6da7;
+  color: var(--primary-color);
   font-family: 'Cocogoose Pro Semilight';
+  font-weight: 600;
+}
+
+.tab-button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+.tab-button svg {
+  font-size: 1.2em;
+  transition: transform var(--transition-base);
+}
+
+.tab-button:hover svg {
+  transform: scale(1.1);
 }
 
 .tab-content {
-  margin-top: 2rem;
+  margin-top: var(--spacing-2xl);
   margin-left: auto;
   margin-right: auto;
-  max-width: 55vw;
+  max-width: 900px;
   font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  animation: fadeIn var(--transition-base) ease-out;
+}
+
+.tab-content p {
+  margin-bottom: var(--spacing-md);
 }
 
 .tab-content p + * {
-  margin-top: 1rem;
+  margin-top: var(--spacing-lg);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .tab-buttons {
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+  }
   
+  .tab-button {
+    padding: var(--spacing-sm) var(--spacing-md);
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+  
+  .tab-content {
+    max-width: 100%;
+    padding: 0 var(--spacing-md);
+  }
+}

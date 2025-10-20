@@ -15,17 +15,26 @@ export function HoverPreviewCard({
 }: HoverPreviewCardProps) {
     const { setWebImg } = useContext(WebContext);
 
+    const handleClick = () => {
+        window.open(webUrl, '_blank', 'noopener,noreferrer');
+    };
+
     return (
-        <a 
+        <div 
             className="card-container"
             onMouseEnter={() => setWebImg(webImg)}
             onMouseLeave={() => setWebImg(null)}
-            href={webUrl}
-            target="blank"
-            rel="noopener noreferrer"
-
+            onClick={handleClick}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    handleClick();
+                }
+            }}
         >
             {children}
-        </a>
+        </div>
     );
 }
