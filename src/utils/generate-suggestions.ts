@@ -1,3 +1,5 @@
+import { mapTabItem } from '../components/shared/item-tab-mapper';
+
 export type Suggestion = {
   label: string;
   tab: string;
@@ -17,13 +19,12 @@ export type AutocompleteToken = {
 
 export function generateSuggestionsTokens(suggestions: Suggestion[]): AutocompleteToken[] {
   const tokens: AutocompleteToken[] = [];
-  const seen: Record<string, Set<string>> = {}; // Evita duplicados: { "tab:subtab": Set<word> }
+  const seen: Record<string, Set<string>> = {};
 
   suggestions.forEach(({ label, tab, subtab, phrase, shortPhrase }) => {
     const key = `${tab}:${subtab || ""}`;
     if (!seen[key]) seen[key] = new Set();
 
-    // Limpiar y dividir las palabras
     const words = phrase.split(/\s+/).map(w => w.replace(/[.,;!?]+$/g, ""));
 
     for (let i = 0; i < words.length; i++) {
@@ -33,7 +34,7 @@ export function generateSuggestionsTokens(suggestions: Suggestion[]): Autocomple
       tokens.push({
         word,
         next: i < words.length - 1 ? words[i + 1] : undefined,
-        tab,
+        tab: mapTabItem(tab) ?? tab,
         subtab,
         phrase,
         shortPhrase,

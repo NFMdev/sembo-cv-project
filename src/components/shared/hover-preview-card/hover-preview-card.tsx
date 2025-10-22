@@ -1,5 +1,4 @@
-import { ReactNode, useContext } from "react";
-import { WebContext } from "../../../contexts/web-context";
+import { ReactNode } from "react";
 import './hover-preview-card.css'
 
 type HoverPreviewCardProps = {
@@ -10,20 +9,15 @@ type HoverPreviewCardProps = {
 
 export function HoverPreviewCard({
     webUrl,
-    webImg,
     children,
 }: HoverPreviewCardProps) {
-    const { setWebImg } = useContext(WebContext);
-
     const handleClick = () => {
         window.open(webUrl, '_blank', 'noopener,noreferrer');
     };
 
     return (
-        <div 
+        <div
             className="card-container"
-            onMouseEnter={() => setWebImg(webImg)}
-            onMouseLeave={() => setWebImg(null)}
             onClick={handleClick}
             role="button"
             tabIndex={0}

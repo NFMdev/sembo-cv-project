@@ -12,26 +12,26 @@ export function Footer() {
             Let's build something amazing together!
           </p>
           <div className="footer-social">
-            <a 
-              href="https://github.com/NFMdev" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://github.com/NFMdev"
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-link"
               aria-label="GitHub Profile"
             >
               <FaGithub />
             </a>
-            <a 
-              href="https://www.linkedin.com/in/nicolas-fiorito/" 
-              target="_blank" 
-              rel="noopener noreferrer" 
+            <a
+              href="https://www.linkedin.com/in/nico-fiorito/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="social-link"
               aria-label="LinkedIn Profile"
             >
               <FaLinkedin />
             </a>
-            <a 
-              href="mailto:nicolasfiorito95@gmail.com" 
+            <a
+              href="mailto:nicofioritom@gmail.com"
               className="social-link"
               aria-label="Send Email"
             >
@@ -39,18 +39,7 @@ export function Footer() {
             </a>
           </div>
         </div>
-        
-        <div className="footer-section">
-          <h3 className="footer-title">Quick Links</h3>
-          <div className="footer-links">
-            <a href="#about" className="footer-link">About</a>
-            <a href="#experience" className="footer-link">Experience</a>
-            <a href="#skills" className="footer-link">Skills</a>
-            <a href="#education" className="footer-link">Education</a>
-            <a href="#contact" className="footer-link">Contact</a>
-          </div>
-        </div>
-        
+
         <div className="footer-section">
           <h3 className="footer-title">Tech Stack</h3>
           <div className="footer-tech">
@@ -60,10 +49,17 @@ export function Footer() {
             <span className="tech-tag">Java</span>
             <span className="tech-tag">Spring Boot</span>
             <span className="tech-tag">PostgreSQL</span>
+            <span className="tech-tag">Apache Flink</span>
+            <span className="tech-tag">Mongo DB</span>
+            <span className="tech-tag">Node.js</span>
+            <span className="tech-tag">Express.js</span>
+            <span className="tech-tag">Docker</span>
+            <span className="tech-tag">Mulesoft</span>
+            <span className="tech-tag">AWS</span>
           </div>
         </div>
       </div>
-      
+
       <div className="footer-bottom">
         <div className="footer-bottom-content">
           <p className="footer-copyright">

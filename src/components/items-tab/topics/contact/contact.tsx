@@ -14,9 +14,9 @@ export const Contact = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/nicolas-fiorito" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/nico-fiorito" target="_blank" rel="noopener noreferrer">
                         <LinkedInIcon />
-                        linkedin.com/in/nicolas-fiorito
+                        linkedin.com/in/nico-fiorito
                     </a>
                 </li>
                 <li>

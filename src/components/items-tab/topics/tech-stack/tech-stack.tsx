@@ -22,7 +22,7 @@ const techCategories: Category[] = [
             { name: "PostgreSQL", level: "Advanced" },
             { name: "Node.js", level: "Advanced" },
             { name: "MongoDB", level: "Advanced" },
-            { name: "Express.js", level: "Intermediate" },
+            { name: "Express.js", level: "Advanced" },
         ],
     },
     {
@@ -32,17 +32,20 @@ const techCategories: Category[] = [
             { name: "TypeScript", level: "Advanced" },
             { name: "HTML/CSS", level: "Advanced" },
             { name: "React", level: "Advanced" },
+            { name: "Redux", level: "Intermediate" },
             { name: "Flutter", level: "Intermediate" },
         ],
     },
     {
         title: "DevOps / Tools",
         techs: [
+            { name: "Docker", level: "Advanced" },
             { name: "Jenkins", level: "Advanced" },
             { name: "OpenShift", level: "Advanced" },
             { name: "Mulesoft", level: "Advanced" },
-            { name: "Oracle Reports", level: "Intermediate" },
-            { name: "Jasper Reports", level: "Intermediate" },
+            { name: "Oracle Reports", level: "Advanced" },
+            { name: "Jasper Reports", level: "Advanced" },
+            { name: "AWS", level: "Intermediate" }
         ],
     },
 ];

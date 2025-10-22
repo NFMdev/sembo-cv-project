@@ -164,17 +164,16 @@
   0%, 100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-20px);
   }
 }
 
-.avatar-placeholder {
-  font-size: 3rem;
-  font-weight: 700;
-  color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-family: 'Cocogoose Pro Darkmode';
+.avatar-image {
+  border-radius: 50%;
+  height: 195px;
+  width: 195px;
 }
 
 .hero-decoration {
@@ -229,25 +228,21 @@
     gap: var(--spacing-2xl);
     text-align: center;
   }
-  
+
   .hero-avatar-container {
     width: 250px;
     height: 250px;
   }
-  
+
   .hero-avatar {
     width: 150px;
     height: 150px;
   }
-  
-  .avatar-placeholder {
-    font-size: 2rem;
-  }
-  
+
   .hero-actions {
     justify-content: center;
   }
-  
+
   .hero-button {
     padding: var(--spacing-sm) var(--spacing-md);
     font-size: 0.9rem;
@@ -258,12 +253,12 @@
   .hero-section {
     padding: var(--spacing-2xl) 0 var(--spacing-xl);
   }
-  
+
   .hero-actions {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .hero-button {
     width: 100%;
     max-width: 200px;

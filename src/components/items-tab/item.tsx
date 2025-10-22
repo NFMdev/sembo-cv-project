@@ -1,6 +1,6 @@
-import { 
-    User, 
-    BriefcaseBusiness, 
+import {
+    User,
+    BriefcaseBusiness,
     GraduationCap,
     Brain,
     Code,
@@ -23,7 +23,7 @@ type ItemProps = {
     onClick: () => void;
 };
 
-export function Item({name, icon, isActive, onClick}: ItemProps) {
+export function Item({ name, icon, isActive, onClick }: ItemProps) {
     const Icon = iconMap[icon]
 
     return (
@@ -31,7 +31,7 @@ export function Item({name, icon, isActive, onClick}: ItemProps) {
             className={`tab-button ${isActive ? "active" : ""}`}
             onClick={onClick}
         >
-            {Icon && <Icon size={20}/>}
+            {Icon && <Icon size={20} />}
             {name}
         </button>
     );

@@ -7,7 +7,7 @@ const TEXT3 = 'I\'m committed to continuous learning and to building solutions t
 const TEXT4 = 'My goal is to contribute fresh ideas, deliver high-quality work, and be part of teams that strive to create innovative experiences that truly make a difference.';
 const TEXT5 = 'I look forward to contributing and growing alongside others who share that same vision.';
 
-export function About({searchQuery}: {searchQuery: string}) {
+export function About({ searchQuery }: { searchQuery: string }) {
     return (
         <section className="about-container">
             <p>

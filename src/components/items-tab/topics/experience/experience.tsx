@@ -37,7 +37,7 @@ const GP_DESCRIPTION = [
     'Managed a hybrid team, and participated in weekly client syncs.'
 ];
 
-export const Experience = ({ searchQuery }: {searchQuery: string}) => {
+export const Experience = ({ searchQuery }: { searchQuery: string }) => {
     return (
         <section className="experience-container">
             <div className="experience-card">
@@ -54,7 +54,7 @@ export const Experience = ({ searchQuery }: {searchQuery: string}) => {
             <div className="experience-card">
                 {ExperienceCard({
                     company: "Grupo Piñero",
-                    title: "Full Stack Developer · 2022 - Present",
+                    title: "Full Stack Developer · 2022 - 2025",
                     webUrl: "https://www.bahia-principe.com/",
                     webImg: "src/assets/img/company_2.png",
                     description: GP_DESCRIPTION,
