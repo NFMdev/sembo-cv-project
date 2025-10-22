@@ -43,7 +43,7 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
     const results = fuse.search(lastWord);
     const matches = results.map((r) => r.item);
 
-    // Limitar resultados y evitar duplicados exactos
+    // Limit results and avoid duplicates
     const unique = Array.from(
       new Map(matches.map((m) => [`${m.word}-${m.tab}-${m.subtab}`, m])).values()
     ).slice(0, 10);
@@ -53,7 +53,6 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
     setShowSuggestions(unique.length > 0);
   }, [query, fuse]);
 
-  // ✅ Función para resaltar coincidencias
   function highlightMatch(text: string, query: string) {
     const regex = new RegExp(`(${query})`, "ig");
     const parts = text.split(regex);
@@ -72,14 +71,12 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
     );
   }
 
-  // ✅ Seleccionar sugerencia
   const handleSelect = (token: AutocompleteToken) => {
     setQuery(token.word);
     setShowSuggestions(false);
     onSearch(token.tab, query, token.subtab);
   };
 
-  // ✅ Buscar manualmente (Enter o botón)
   const handleSearch = () => {
     if (!query.trim()) return;
     const match = tokens.find(
@@ -89,7 +86,6 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
     setShowSuggestions(false);
   };
 
-  // ✅ Teclas de navegación
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (!showSuggestions) return;
 
@@ -133,9 +129,8 @@ export default function SearchBar({ onSearch }: SearchBarProps) {
           {filtered.map((item, index) => (
             <li
               key={`${item.word}-${item.tab}-${item.subtab}-${index}`}
-              className={`suggestion-item ${
-                index === activeIndex ? "active" : ""
-              }`}
+              className={`suggestion-item ${index === activeIndex ? "active" : ""
+                }`}
               onMouseDown={() => handleSelect(item)}
               onMouseEnter={() => setActiveIndex(index)}
             >

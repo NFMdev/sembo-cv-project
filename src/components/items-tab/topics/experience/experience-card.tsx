@@ -30,9 +30,9 @@ export function ExperienceCard({ company, title, webUrl, webImg, description, te
             ))}
             <div className="experience-tech">
                 {[...technologies.entries()].map(([tech, url], index) => (
-                    <a 
-                        key={index} 
-                        href={url} 
+                    <a
+                        key={index}
+                        href={url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="tech-badge"

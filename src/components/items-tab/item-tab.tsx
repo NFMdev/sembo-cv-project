@@ -9,11 +9,11 @@ import { Contact } from './topics/contact/contact';
 import { TABS } from '../shared/constants/tabs-constants';
 
 type ItemTabProps = {
-  activeTab: string;
-  setActiveTab: (tab: string) => void;
-  activeSubtab?: string;
-  setActiveSubtab?: (subtab: string) => void;
-  searchQuery: string;
+    activeTab: string;
+    setActiveTab: (tab: string) => void;
+    activeSubtab?: string;
+    setActiveSubtab?: (subtab: string) => void;
+    searchQuery: string;
 };
 
 export const ItemTab = ({
@@ -28,23 +28,24 @@ export const ItemTab = ({
         <div className="tab-container">
             <div className="tab-buttons">
                 {TABS.map((tab) => (
-                    <Item 
-                        name={tab.name} 
-                        icon={tab.icon} 
-                        isActive={activeTab === tab.id}
-                        onClick={() => setActiveTab(tab.id)}
-                    ></Item>
+                    <Item
+                        key={tab.name}
+                        name={tab.name}
+                        icon={tab.icon}
+                        isActive={activeTab === tab.name}
+                        onClick={() => setActiveTab(tab.name)}
+                    />
                 ))}
             </div>
             <div className="tab-content">
-                {activeTab === "about" && <About searchQuery={searchQuery} />}
-                {activeTab === "experience" && <Experience searchQuery={searchQuery} />}
-                {activeTab === "education" && <Education searchQuery={searchQuery} />}
-                {activeTab === "skills" && <Skills />}
-                {activeTab === "tech-stack" && (
+                {activeTab === "About" && <About searchQuery={searchQuery} />}
+                {activeTab === "Experience" && <Experience searchQuery={searchQuery} />}
+                {activeTab === "Education" && <Education searchQuery={searchQuery} />}
+                {activeTab === "Skills" && <Skills />}
+                {activeTab === "Tech Stack" && (
                     <TechStack activeSubtab={activeSubtab} setActiveSubtab={setActiveSubtab} searchQuery={searchQuery} />
                 )}
-                {activeTab === "contact" && <Contact />}
+                {activeTab === "Contact" && <Contact />}
             </div>
         </div>
     );

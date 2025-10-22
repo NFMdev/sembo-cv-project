@@ -30,7 +30,7 @@
     background: #ffffff;
     border-radius: 12px;
     padding: 1rem;
-    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
 .tech-name {
@@ -57,9 +57,11 @@
 .level-familiar {
     background: linear-gradient(90deg, #fca5a5 30%, #eee 30%);
 }
+
 .level-intermediate {
     background: linear-gradient(90deg, #facc15 60%, #eee 60%);
 }
+
 .level-advanced {
     background: linear-gradient(90deg, #4ade80 100%, #eee 90%);
 }

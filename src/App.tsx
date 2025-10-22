@@ -1,13 +1,13 @@
-import { useState } from 'react'
-import './index.css'
-import './App.css'
-import { WebProvider } from './contexts/web-context';
+import { useState } from 'react';
+import './index.css';
+import './App.css';
+import { Header } from './components/header/header';
 import SearchBar from './components/search-bar/search-bar';
 import { ItemTab } from './components/items-tab/item-tab';
-import { WebPreview } from './components/iframe-preview/web-preview';
+import { Footer } from './components/footer/footer';
 
 function App() {
-  const [activeTab, setActiveTab] = useState<string>("about");
+  const [activeTab, setActiveTab] = useState<string>("About");
   const [activeSubtab, setActiveSubtab] = useState<string | undefined>();
   const [searchQuery, setSearchQuery] = useState<string>("");
 
@@ -19,21 +19,20 @@ function App() {
   }
 
   return (
-    <WebProvider>
+    <div className="app-wrapper">
+      <Header />
       <div className="main-container">
-        
-        <h1>Nico Fiorito</h1>
-        <SearchBar onSearch={handleSearch}/>
-        <ItemTab 
+        <SearchBar onSearch={handleSearch} />
+        <ItemTab
           activeTab={activeTab}
           setActiveTab={setActiveTab}
           activeSubtab={activeSubtab}
           setActiveSubtab={setActiveSubtab}
           searchQuery={searchQuery}
         />
-        <WebPreview />
       </div>
-    </WebProvider>
+      <Footer />
+    </div>
   );
 }
 
