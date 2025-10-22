@@ -1,5 +1,7 @@
 import './header.css';
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
+import avatarImg from '../../assets/Fiorito.jpeg';
+import resumePdf from '../../assets/Nico_Fiorito_Resume_Full_Stack.pdf';
 
 export function Header() {
   return (
@@ -46,19 +48,20 @@ export function Header() {
             </a>
             <a
               className="hero-button secondary"
-              aria-label="Download CV"
-              href="src\assets\Nico_Fiorito_Resume_Full_Stack.pdf"
-              download
+              aria-label="Open CV PDF"
+              href={resumePdf}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaFileDownload />
-              <span>Download CV</span>
+              <span>View CV</span>
             </a>
           </div>
         </div>
         <div className="hero-visual">
           <div className="hero-avatar-container">
             <div className="hero-avatar">
-                <img className="avatar-image" src="src\assets\Fiorito.jpeg"></img>
+                <img className="avatar-image" src={avatarImg} alt="Nico Fiorito avatar" />
             </div>
             <div className="hero-decoration hero-decoration-1"></div>
             <div className="hero-decoration hero-decoration-2"></div>
