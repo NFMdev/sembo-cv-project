@@ -21,7 +21,7 @@ export function generateSuggestionsTokens(suggestions: Suggestion[]): Autocomple
   const tokens: AutocompleteToken[] = [];
   const seen: Record<string, Set<string>> = {};
 
-  suggestions.forEach(({ label, tab, subtab, phrase, shortPhrase }) => {
+  suggestions.forEach(({ tab, subtab, phrase, shortPhrase }) => {
     const key = `${tab}:${subtab || ""}`;
     if (!seen[key]) seen[key] = new Set();
 

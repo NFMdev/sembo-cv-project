@@ -56,7 +56,7 @@ type TechStackProps = {
     searchQuery: string;
 }
 
-export const TechStack = ({ activeSubtab, setActiveSubtab, searchQuery }: TechStackProps) => {
+export const TechStack = ({ activeSubtab, searchQuery }: TechStackProps) => {
 
     const [activeCategory, setActiveCategory] = useState(activeSubtab || "Backend");
 
